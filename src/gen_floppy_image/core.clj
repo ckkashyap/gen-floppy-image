@@ -1,4 +1,6 @@
-(ns gen-floppy-image.core)
+(ns gen-floppy-image.core
+(:require [gen-floppy-image.asm :as asm])
+  )
 
 (defn foo
   "I don't do a whole lot."
@@ -6,4 +8,8 @@
   (println x "Hello, World!"))
 
 
+
+
 (defn -main [& args] (println "Hello world"))
+
+
