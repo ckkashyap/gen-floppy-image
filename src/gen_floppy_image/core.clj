@@ -8,7 +8,12 @@
   (println x "Hello, World!"))
 
 
-
+(def instruction (-> []
+                     (asm/mov :ax 10)
+                     (asm/mov :bx 10)
+                     (asm/mov :cx 10)
+                     (asm/label "dingo")
+                     ))
 
 (defn -main [& args] (println "Hello world"))
 
